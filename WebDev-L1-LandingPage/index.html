@@ -1,1 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>StreamFlix | Unlimited Entertainment</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">STREAMFLIX</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#trending">Trending</a>
+            <a href="#features">Features</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+
+        <button class="signin-btn" onclick="openSignIn()">Sign In</button>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">STREAMFLIX ORIGINAL</p>
+
+            <h1>
+                Unlimited Movies,
+                Shows & More
+            </h1>
+
+            <p class="hero-description">
+                Watch your favourite movies and shows anytime,
+                anywhere. Enjoy entertainment without limits.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="watch-btn" onclick="startWatching()">
+                    ▶ Start Watching
+                </button>
+
+                <button class="more-btn" onclick="showMore()">
+                    More Info
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Trending Section -->
+    <section class="trending" id="trending">
+
+        <div class="section-title">
+            <h2>Trending Now</h2>
+            <p>Popular movies and shows everyone is watching</p>
+        </div>
+
+        <div class="movie-container">
+
+            <div class="movie-card">
+                <div class="number">01</div>
+                <div class="movie-image movie-one"></div>
+                <h3>Shadow City</h3>
+                <p>Action • Thriller</p>
+            </div>
+
+
+            <div class="movie-card">
+                <div class="number">02</div>
+                <div class="movie-image movie-two"></div>
+                <h3>Lost Horizon</h3>
+                <p>Adventure • Drama</p>
+            </div>
+
+
+            <div class="movie-card">
+                <div class="number">03</div>
+                <div class="movie-image movie-three"></div>
+                <h3>Dark Signal</h3>
+                <p>Mystery • Sci-Fi</p>
+            </div>
+
+
+            <div class="movie-card">
+                <div class="number">04</div>
+                <div class="movie-image movie-four"></div>
+                <h3>Last Mission</h3>
+                <p>Action • Adventure</p>
+            </div>
+
+
+            <div class="movie-card">
+                <div class="number">05</div>
+                <div class="movie-image movie-five"></div>
+                <h3>Beyond Time</h3>
+                <p>Sci-Fi • Drama</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features" id="features">
+
+        <div class="section-title">
+            <h2>Enjoy Entertainment Anywhere</h2>
+            <p>Everything you need for a better streaming experience.</p>
+        </div>
+
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <div class="feature-icon">📺</div>
+                <h3>Watch on TV</h3>
+                <p>
+                    Enjoy your favourite content on smart TVs,
+                    gaming consoles and streaming devices.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">💻</div>
+                <h3>Watch Anywhere</h3>
+                <p>
+                    Stream on your laptop, desktop, tablet
+                    or mobile device.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">⬇️</div>
+                <h3>Download & Watch</h3>
+                <p>
+                    Save your favourite content and watch it
+                    whenever you want.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>Ready to Start Watching?</h2>
+
+        <p>
+            Join the world of unlimited entertainment today.
+        </p>
+
+        <button class="watch-btn" onclick="startWatching()">
+            Get Started →
+        </button>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    What is StreamFlix?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    StreamFlix is a fictional streaming platform
+                    created as a front-end web development project.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Can I watch on mobile?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Yes. The website is fully responsive and can
+                    be viewed on mobile, tablet and desktop.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Is this a real streaming service?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    No. StreamFlix is a fictional project created
+                    for learning and portfolio purposes.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Is the website responsive?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Yes. The layout automatically adjusts to
+                    different screen sizes.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">STREAMFLIX</div>
+
+        <p>
+            © 2026 StreamFlix. This is a fictional educational project.
+        </p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#trending">Trending</a>
+            <a href="#faq">FAQ</a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+          </html>
