@@ -1,0 +1,94 @@
+function startWatching() {
+    alert("Welcome to StreamFlix! 🎬");
+}
+
+function showMore() {
+    document.getElementById("features").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+
+/* FAQ */
+
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(function(question) {
+
+    question.addEventListener("click", function() {
+
+        const currentItem = this.parentElement;
+
+        document.querySelectorAll(".faq-item").forEach(function(item) {
+
+            if (item !== currentItem) {
+                item.classList.remove("active");
+            }
+
+        });
+
+        currentItem.classList.toggle("active");
+
+    });
+
+});
+function openSignIn() {
+    document.body.innerHTML = `
+        <div class="signin-page">
+
+            <div class="signin-box">
+
+                <div class="signin-logo">STREAMFLIX</div>
+
+                <h1>Sign In</h1>
+
+                <form onsubmit="loginUser(event)">
+
+                    <input 
+                        type="email"
+                        id="email"
+                        placeholder="Email address"
+                        required
+                    >
+
+                    <input 
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        required
+                    >
+
+                    <button type="submit">
+                        Sign In
+                    </button>
+
+                </form>
+
+                <p class="signup-text">
+                    New to StreamFlix?
+                    <span onclick="createAccount()">Create an account</span>
+                </p>
+
+                <button class="back-btn" onclick="location.reload()">
+                    ← Back to Home
+                </button>
+
+            </div>
+
+        </div>
+    `;
+}
+
+
+function loginUser(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+
+    alert("Welcome back! 🎬\nSigned in as: " + email);
+}
+
+
+function createAccount() {
+    alert("Create Account page coming soon! 🚀");
+}
